@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView android:id="@+id/textTitle"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+          android:text="Customers Detail"></TextView>
+        <!-- style="@style/heading"   -->       
+      
+   <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:stretchColumns="1">
+
+    <TableRow>        
+       <TextView 
+        android:textColor="#ff0000"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"  
+        android:gravity="center"  
+        android:text="From"></TextView>
+        
+        <TextView 
+        android:textColor="#ff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"  
+        android:gravity="center"  
+        android:text="Date"></TextView>
+        
+        <TextView 
+        android:textColor="#ff0000"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"  
+        android:gravity="center"  
+        android:text="msg"></TextView>
+        
+       
+    </TableRow>
+  </TableLayout>
+      
+  <ListView
+        android:id="@+id/listSms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+  <TextView 
+        android:id="@+id/textError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Sorry! No Customers Found!" />
+       <!--  style="@style/error" -->
+        
+        
+</LinearLayout>
+
